@@ -14,6 +14,7 @@ public class AllController {
     @Autowired
     private AllService allService;
 
+    //Retourne tous les salaries avec les valeurs fk (villes,fonction)
     @GetMapping("/all")
     public List<All> getAll(@RequestParam(required = false) String nom, @RequestParam(required = false) Long service, @RequestParam(required = false) Long site) {
         return allService.getAll(nom, service, site);

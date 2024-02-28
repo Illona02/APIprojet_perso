@@ -15,7 +15,7 @@ public class SalariesService {
     @Autowired
     private SalariesRepository salariesRepository;
 
-    //int
+
     public Optional<Salaries> getSalaries(final long id) {
         return salariesRepository.findById(id);
     }
@@ -24,7 +24,7 @@ public class SalariesService {
         return salariesRepository.findAll();
     }
 
-    //int
+
     public void deleteSalaries(final long id) {
         salariesRepository.deleteById(id);
     }

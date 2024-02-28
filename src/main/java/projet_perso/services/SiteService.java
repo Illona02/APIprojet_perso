@@ -16,7 +16,6 @@ public class
     @Autowired
     private SiteRepository siteRepository;
 
-    //int
     public Optional<Site> getSite(final long id) {
         return siteRepository.findById(id);
     }
@@ -25,7 +24,6 @@ public class
         return siteRepository.findAll();
     }
 
-    //int
     public void deleteSite(final long id) {
         siteRepository.deleteById(id);
     }

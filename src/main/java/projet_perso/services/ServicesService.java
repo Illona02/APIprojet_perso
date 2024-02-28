@@ -15,7 +15,6 @@ public class ServicesService {
     @Autowired
     private ServicesRepository servicesRepository;
 
-    //int
     public Optional<Services> getServices(final Long id) {
         return servicesRepository.findById(id);
     }

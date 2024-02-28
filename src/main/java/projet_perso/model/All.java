@@ -2,6 +2,7 @@ package projet_perso.model;
 
 public class All {
 
+    //table salaries
     Long id;
     String nom;
 
@@ -12,9 +13,9 @@ public class All {
     String telephone_portable;
 
     String email;
-
+    //table site
     String ville;
-
+    //table service
     String fonction;
 
 
