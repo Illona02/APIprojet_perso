@@ -31,7 +31,7 @@ public class SiteController {
     }
 
     @PutMapping("/site")
-    public Site saveSite(Site site)  {
+    public Site saveSite(@RequestBody Site site)  {
         return siteService.saveSite(site);
     }
 }
