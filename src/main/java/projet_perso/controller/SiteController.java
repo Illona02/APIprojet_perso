@@ -27,7 +27,7 @@ public class SiteController {
     }
     //Supprime un site en fonction de son id
     @DeleteMapping("/site/{id}")
-    public void deleteSite(@RequestBody final Long id) {
+    public void deleteSite(@PathVariable final Long id) {
         siteService.deleteSite(id);
     }
 

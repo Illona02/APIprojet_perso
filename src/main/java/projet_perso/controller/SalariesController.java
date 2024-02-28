@@ -37,7 +37,7 @@ public class SalariesController {
     }
     //Supprime un salarie en fonction de son id
     @DeleteMapping("/salaries/{id}")
-    public void deleteSalaries(@RequestBody final int id) {
+    public void deleteSalaries(@PathVariable final int id) {
         salariesService.deleteSalaries(id);
     }
     //Modifie un salarie

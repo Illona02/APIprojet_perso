@@ -1,5 +1,6 @@
 package projet_perso.controller;
 
+import jakarta.websocket.server.PathParam;
 import org.springframework.web.bind.annotation.*;
 import projet_perso.model.Services;
 import projet_perso.services.ServicesService;
@@ -26,7 +27,7 @@ public class ServicesController {
     }
     //Supprime un service en fonction de son id
     @DeleteMapping("/services/{id}")
-    public void deleteServices(@RequestBody final Long id) {
+    public void deleteServices(@PathVariable final Long id) {
         servicesService.deleteServices(id);
     }
 
